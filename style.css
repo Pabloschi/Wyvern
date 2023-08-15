@@ -285,7 +285,9 @@
 }
 
 .contacto-container {
-  max-width: 1600px;
+  background: var(--bg-gris);
+  border-radius: 20px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -319,8 +321,41 @@
   background: var(--bg-grayclaro);
   cursor: pointer;
   padding: 10px;
-  width: 325px;
 
   padding: 10px;
   border-radius: 10px;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contacto-info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  font-size: 23px;
+}
+
+.contacto-info h4 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  height: 40px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-gris);
+  color: white;
+}
+
+.footer p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
