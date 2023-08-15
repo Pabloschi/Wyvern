@@ -15,10 +15,11 @@
       src="https://kit.fontawesome.com/b04a03d713.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Mono:ital,wght@0,100;0,200;1,500&family=Rubik:ital,wght@0,300;0,500;0,900;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100;0,800;1,400&family=Roboto+Mono:ital,wght@0,200;1,500&family=Rubik:ital,wght@0,300;0,500;0,900;1,300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -38,15 +39,119 @@
         <!-- menu -->
         <ul class="navbar-list">
           <li><a href="#hero" id="home">Home</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#product">Productos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about-us">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contactos">Contacto</a></li>
         </ul>
       </nav>
       <div class="login">
         <a href="#">Ingresar</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- hero -->
+
+      <section id="hero">
+        <div class="hero-container">
+          <div class="hero-info">
+            <h1><span> Wyvern </span>es tu mejor opcion</h1>
+            <p>
+              clickea, teclea y escucha con los mejores perifericos para tu PC
+            </p>
+            <a href="#productos">Comprar</a>
+          </div>
+          <div class="img-logo">
+            <img
+              src="./img/Default_a_logo_for_a_web_page_using_a_wyvern_or_dragon_minima_2_637b9239-5a6f-4bb2-be07-ee16036fa2ae_0.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="about-us-container">
+          <div class="about-us-info">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>
+              Wyvern es una tienda online de perifericos para PC y notebooks,
+              para todos nuestros gamers, les ofrecemos la mejor calidad y
+              precio en perifericos.
+            </p>
+            <h2>CALIDAD Y CONFIANZA</h2>
+            <p>
+              Nos caracterizamos por brindar gran calidad y confianza a nuestros
+              clientes, brindando una excelente atencion y sopórte luego de la
+              compra.
+            </p>
+          </div>
+          <div class="galeria-muestra">
+            <img src="./img/mousess-PhotoRoom.png-PhotoRoom.png" alt="prueba" />
+          </div>
+        </div>
+      </section>
+
+      <section class="productos" id="productos">
+        <h2>PRODUCTOS</h2>
+        <p>Vivi la experiencia del gaming con lo mejor</p>
+        <div class="productos-container">
+          <div class="cards">
+            <div class="card-mouse">
+              <h3>M690 REDRAGON</h3>
+              <img src="./img/m690 mouse.webp" alt="mouse" />
+
+              <h4>$11000</h4>
+              <a href="#comprar">Comprar</a>
+            </div>
+            <div class="card-mouse">
+              <h3>M988 REDRAGON</h3>
+              <img src="./img/m988 mouse.webp" alt="mouse" />
+
+              <h4>$7500</h4>
+              <a href="#comprar">Comprar</a>
+            </div>
+            <div class="card-mouse">
+              <h3>M711 REDRAGON</h3>
+              <img src="./img/m711 mouse.webp" alt="mouse" />
+
+              <h4>$9200</h4>
+              <a href="#comprar">Comprar</a>
+            </div>
+            <div class="card-mouse">
+              <h3>LOGITECH G</h3>
+              <img src="./img/mouse g.webp" alt="mouse" />
+
+              <h4>$15400</h4>
+              <a href="#comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="botones">
+          <a href="#productos">Mouses</a>
+          <a href="#productos">Teclados</a>
+          <a href="#productos">Auriculares</a>
+        </div>
+      </section>
+      <section class="contacto" id="contacto">
+        <h2>CONTACTO</h2>
+
+        <div class="contacto-container">
+          <div class="form">
+            <p>Completa con tus datos y te contactamos.</p>
+            <form>
+              <input type="text" name="Nombre" placeholder="Tu nombre" />
+              <input type="tel" name="telefono" placeholder="Tu telefono" />
+              <input type="email" name="email" placeholder="Tu email" />
+              <button type="submit">ENVIAR</button>
+            </form>
+          </div>
+          <div class="contacto-info">
+            <h3>Contactanos</h3>
+            <p>tel</p>
+            <p>email</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
