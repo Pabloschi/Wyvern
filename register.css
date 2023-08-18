@@ -16,15 +16,14 @@ html {
   background-color: var(--bg-black);
 }
 
-/* login */
-.login {
+.register {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 260px;
+  margin-top: 170px;
 }
 
-.login-card {
+.register-card {
   background: var(--bg-gris);
   padding: 20px;
   width: 15%;
@@ -36,8 +35,8 @@ html {
   align-items: center;
 }
 
-.logo img {
-  width: 190px;
+.logo-2 img {
+  width: 390px;
 }
 
 .content {
@@ -62,14 +61,14 @@ html {
   height: 25px;
 }
 
-.btn-login {
+.btn-register {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-.btn-login a {
+.btn-register a {
   font-family: Roboto Mono, monospace;
   color: white;
   border: 1px solid var(--bg-violet2);
@@ -79,10 +78,6 @@ html {
   transition: background-color 2s;
 }
 
-.btn-login a:hover {
+.btn-register a:hover {
   background-color: var(--bg-violet);
-}
-
-.slide-top {
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

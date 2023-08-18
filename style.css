@@ -21,23 +21,16 @@ html {
   cursor: pointer;
 }
 
-#toggle-menu {
-  display: none;
-}
-
-.navbar i {
-  display: none;
-}
-
 .header {
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--bg-black);
-  padding: 20px;
+  padding: 0px 50px;
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid rgb(31, 29, 29);
+  box-shadow: 0 1px 5px var(--bg-violet);
 }
 
 .navbar {
@@ -45,6 +38,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
+}
+
+.navbar i {
+  color: white;
+  display: none;
+  font-size: 36px;
+}
+
+#toggle-menu {
+  display: none;
 }
 
 .navbar a {
@@ -52,6 +56,11 @@ html {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
 }
 
 .navbar a:hover {
@@ -65,6 +74,11 @@ html {
   gap: 50px;
 }
 
+.login {
+  display: flex;
+  gap: 10px;
+}
+
 .login a {
   font-family: Roboto Mono, monospace;
   color: white;
@@ -74,7 +88,7 @@ html {
   text-decoration: none;
 }
 
-.login a:hover {
+.login a:hover:first-child {
   background-color: #7258f2;
 }
 
@@ -365,4 +379,30 @@ html {
 .footer p {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+}
+
+.navbar i {
+}
+
+@media (max-width: 576px) {
+  .navbar ul {
+    background: var(--bg-gris);
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
 }
