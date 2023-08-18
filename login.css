@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-gris: #0b0f17;
+  --bg-black: #000000;
+  --bg-violet: #7258f2;
+  --bg-violet2: #7e55ff;
+  --bg-grayclaro: #a0aec0;
+  --text-gray: #888888;
+}
+
+html {
+  background-color: var(--bg-black);
+}
+
+/* login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.login-card {
+  background: var(--bg-gris);
+  padding: 20px;
+  width: 20%;
+  height: 65%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 190px;
+}
+
+.content {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.content h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.content input {
+  height: 25px;
+}
+
+.btn-login {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-login a {
+  font-family: Roboto Mono, monospace;
+  color: white;
+  border: 1px solid var(--bg-violet2);
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-login a:hover {
+  background-color: var(--bg-violet);
+}
