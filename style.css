@@ -381,13 +381,13 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-/* responsive design */
+/* responsive design celular */
 
 @media (max-width: 600px) {
   /* menu hamburguesa */
   .navbar ul {
     background: var(--bg-gris);
-    width: 100%;
+    width: 600px;
     height: calc(100vh - 80px);
     position: absolute;
     top: 80px;
@@ -408,23 +408,34 @@ html {
 }
 
 @media (max-width: 600px) {
-  .header {
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding-left: 30px;
-  }
-  .navbar {
-    width: 600px;
-  }
   .hero-container {
-    width: 600px;
     flex-wrap: wrap;
   }
 
-  .img-logo img {
+  .hero-container h1 {
+    text-align: center;
+  }
+
+  .hero-info p {
+    text-align: center;
+  }
+
+  .about-us-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .about-us-info {
+    width: 100%;
+  }
+
+  .contacto-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* logo y mouse */
+  .hero-container img {
     width: 500px;
   }
 
