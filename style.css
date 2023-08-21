@@ -408,10 +408,6 @@ html {
 }
 
 @media (max-width: 600px) {
-  .header {
-    width: 600px;
-  }
-
   .hero-container {
     flex-wrap: wrap;
   }
@@ -445,5 +441,46 @@ html {
 
   .about-us-container img {
     width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    background: var(--bg-gris);
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .about-us-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .about-us-container img {
+    width: 500px;
+  }
+  .contacto-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }

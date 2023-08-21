@@ -88,3 +88,9 @@ html {
     width: 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .login-card {
+    width: 300px;
+  }
+}
