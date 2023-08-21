@@ -422,4 +422,8 @@ html {
   .img-logo img {
     width: 400px;
   }
+
+  .about-us-container img {
+    width: 300px;
+  }
 }
