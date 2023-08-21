@@ -81,3 +81,9 @@ html {
 .btn-register a:hover {
   background-color: var(--bg-violet);
 }
+
+@media (max-width: 600px) {
+  .register-card {
+    width: 300px;
+  }
+}
