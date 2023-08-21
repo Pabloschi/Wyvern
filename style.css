@@ -83,7 +83,7 @@ html {
   font-family: Roboto Mono, monospace;
   color: white;
   border: 1px solid var(--bg-violet2);
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -381,10 +381,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-.navbar i {
-}
+/* responsive design */
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
+  /* menu hamburguesa */
   .navbar ul {
     background: var(--bg-gris);
     width: 100%;
@@ -404,5 +404,22 @@ html {
 
   #toggle-menu:checked ~ .navbar-list {
     display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 600px;
+  }
+  .navbar {
+    width: 600px;
+  }
+  .hero-container {
+    width: 600px;
+    flex-wrap: wrap;
+  }
+
+  .img-logo img {
+    width: 400px;
   }
 }
