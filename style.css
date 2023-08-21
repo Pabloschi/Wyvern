@@ -408,6 +408,10 @@ html {
 }
 
 @media (max-width: 600px) {
+  .header {
+    width: 600px;
+  }
+
   .hero-container {
     flex-wrap: wrap;
   }
